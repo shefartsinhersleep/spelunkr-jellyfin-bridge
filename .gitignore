@@ -1,0 +1,30 @@
+# Personal configuration and generated upstream code
+.env
+.env.*
+!.env.example
+config.local.*
+scheduler.cjs
+spelunkr-app.js
+.cache/
+runtime/
+node_modules/
+# Runtime files and recordings
+intermission.txt
+*.log
+*.ts
+*.mp4
+*.mp3
+*.mkv
+*.zip
+*.pem
+*.key
+*.p12
+*.pfx
+*.pid
+coverage/
+probe.json
+lineup.json
+*-schedule.json
+guide-test.xml
+.DS_Store
+Thumbs.db

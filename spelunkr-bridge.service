@@ -1,0 +1,17 @@
+[Unit]
+Description=Experimental Spelunkr TV to Jellyfin bridge
+After=network-online.target
+
+[Service]
+Type=simple
+WorkingDirectory=%h/spelunkr-jellyfin-bridge
+EnvironmentFile=%h/.config/spelunkr-bridge.env
+ExecStart=/usr/bin/env node bridge.cjs
+Restart=on-failure
+RestartSec=10
+KillMode=control-group
+TimeoutStopSec=10
+NoNewPrivileges=true
+
+[Install]
+WantedBy=default.target

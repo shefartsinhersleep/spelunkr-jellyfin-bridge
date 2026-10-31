@@ -1,0 +1,13 @@
+{
+  "name": "spelunkr-jellyfin-bridge",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Experimental Spelunkr TV to Jellyfin Live TV bridge for Raspberry Pi and Linux",
+  "engines": {"node": ">=24"},
+  "scripts": {
+    "start": "node bridge.cjs",
+    "setup:scheduler": "node setup-scheduler.cjs",
+    "test": "node --test config.test.cjs",
+    "check:schedule": "node check.cjs"
+  }
+}
